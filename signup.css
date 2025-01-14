@@ -111,7 +111,7 @@ body {
   height: 50px;
 }
 
-.registerForm article span ruby {
+.registerForm article span .signup {
   display: flex;
   flex-flow: column nowrap;
 }
