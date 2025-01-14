@@ -9,7 +9,6 @@
   text-decoration: none;
   list-style-type: none;
   outline: none;
-  -webkit-appearance: none;
 }
 
 :root {
@@ -335,6 +334,7 @@ header nav ul li:hover {
   line-height: 30px;
   text-align: left;
   color: #000000;
+  width: 100%;
 }
 
 .aboutContents div {
