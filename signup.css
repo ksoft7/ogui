@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+:root {
+  --general-bg-color: #2d3f53;
+  --general-font-family: "Montserrat", sans-serif;
+  --btn--color: #ff6e3b;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+}
+
+.posLines {
+  background: linear-gradient(180deg, #2d3f53 0%, #648cb9 100%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.titlehol {
+  position: fixed;
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.titlehol img {
+  width: 100%;
+  height: 90%;
+}
+
+.tripLine1 {
+  position: fixed;
+  top: -5rem;
+}
+
+.tripLine2 {
+  position: fixed;
+  bottom: -5rem;
+}
+
+.coverReg {
+  padding: 5rem 0;
+}
+
+.registerForm {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  z-index: 1000;
+  background: #ffffff;
+  width: 50%;
+  padding: 5rem 4rem;
+  margin: 0 auto;
+}
+
+.registerForm .closeoo {
+  font-size: 5rem;
+  font-weight: 200;
+  color: #000000;
+  position: absolute;
+  right: 3rem;
+  top: 5rem;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.registerForm h1 {
+  font-family: var(--general-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.26px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #000000;
+}
+
+.registerForm article {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.registerForm article span {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.registerForm article div img {
+  height: 50px;
+}
+
+.registerForm article span ruby {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.registerForm h2 {
+  font-family: var(--general-font-family);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+}
+
+.registerForm p {
+  font-family: var(--general-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+}
+
+.registerForm form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+.registerForm form div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+}
+
+.registerForm form div span {
+  display: flex;
+  flex-flow: row;
+  gap: 1.5rem;
+}
+
+.registerForm form span {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+}
+
+.registerForm form h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--general-font-family);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.92px;
+  text-align: left;
+}
+
+.registerForm form h3 img {
+  width: 22.29px;
+  height: 25.52px;
+}
+
+.registerForm form input {
+  padding: 27.5px 34px;
+  border-radius: 10.63px;
+  border: 1.1px solid #25313c;
+  width: 100%;
+  outline: none;
+}
+
+.registerForm form input::placeholder {
+  font-family: var(--general-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.92px;
+  text-align: left;
+  color: #17383f8a;
+}
+
+.registerForm form .or {
+  display: flex;
+  flex-flow: row;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.registerForm form .or div {
+  flex: 1;
+  border-top: 1.06px solid #22222240;
+}
+
+.registerForm form .google {
+  display: flex;
+  align-items: center;
+  font-family: var(--general-font-family);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.33px;
+  text-align: center;
+  justify-content: center;
+  border: 1.06px solid #d3d3d3;
+  background-color: transparent;
+  color: #222222;
+  width: 300px;
+  padding: 20.2px 23.39px;
+  gap: 20.63px;
+  border-radius: 8.51px;
+  margin: 0 auto;
+}
+
+.registerForm form .register {
+  display: flex;
+  align-items: center;
+  font-family: var(--general-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.38px;
+  text-align: center;
+  justify-content: center;
+  border: 1.06px solid #d3d3d3;
+  color: #222222;
+  width: 250px;
+  padding: 20.2px 23.39px;
+  gap: 20.63px;
+  border-radius: 8.51px;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #25313c;
+  margin-top: 1rem;
+}
+
+.content2 {
+  display: none;
+}
+
+@media (max-width: 1025px) {
+  .registerForm {
+    width: 90%;
+  }
+}
+
+@media (max-width: 426px) {
+  .registerForm form div span {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+  }
+
+  .logo1 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .registerForm p {
+    font-size: 3.2vw;
+    line-height: 1.2;
+  }
+
+  .registerForm h2 {
+    font-size: 18px;
+  }
+
+  .registerForm article div img {
+    height: 60px;
+  }
+
+  .registerForm h1 {
+    font-size: 20px;
+  }
+
+  .registerForm form .google {
+    width: 100%;
+    gap: 10px;
+    font-size: 3.5vw;
+    padding: 18px 23.39px;
+  }
+  .registerForm form .register {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .registerForm form input {
+    padding: 20px 34px;
+  }
+}
