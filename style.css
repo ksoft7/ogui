@@ -745,8 +745,9 @@ footer .footerCont1 div span {
     padding: 5px 8px;
   }
   .hero-img1 {
-    width: 20em;
+    width: 50%;
     height: 150px;
+    display: none;
   }
   .hero-img2 {
     width: 100%;
@@ -796,6 +797,10 @@ footer .footerCont1 div span {
 @media (max-width: 375px) {
   .comingSoon_sec article h2 {
     font-size: 25px;
+  }
+
+  footer .footerCont1 div p {
+    width: 100%;
   }
 
   .comingSoon_sec article {
