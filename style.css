@@ -169,6 +169,7 @@ header nav ul li:hover {
   display: flex;
   flex-flow: column nowrap;
   gap: 2rem;
+  width: 100%;
 }
 
 .hero_section h1 {
@@ -180,13 +181,14 @@ header nav ul li:hover {
   text-align: left;
   color: #ffffff;
   text-shadow: 0px 4px 4px #00000040;
+  margin-top: -50px;
 }
 
 .hero_section p {
   font-family: "Barlow", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 34px;
   text-align: left;
   color: #ffffff;
 }
@@ -213,7 +215,7 @@ header nav ul li:hover {
 }
 
 .hero_section .heroContents figure {
-  border: 1px solid;
+  /* border: 1px solid; */
   display: flex;
   position: relative;
   align-items: flex-end;
@@ -224,25 +226,34 @@ header nav ul li:hover {
 .hero-img1 {
   position: absolute;
   left: -2rem;
-  top: -6rem;
+  top: -9rem;
+  height: 250px;
+  width: 250px;
+  /* z-index: 2; */
+  object-fit: contain;
+  border-bottom-right-radius: 100px;
 }
 
 .hero-img2 {
   height: 100%;
+  border-bottom-right-radius: 100px;
 }
 
 .heroContents1 {
-  width: 85%;
+  width: 86%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   gap: 3rem;
   background: #d9d9d93d;
   border-radius: 4px;
-  padding: 2rem 3rem;
-  padding-bottom: 0;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 10rem;
   overflow: hidden;
   overflow-x: scroll;
+  z-index: 9999;
 }
 
 .heroContents1 div {
@@ -259,12 +270,14 @@ header nav ul li:hover {
   text-align: center;
   width: 30px;
   height: 30px;
-  margin: 0 auto;
+  position: relative;
+  left: -30px;
+  right: 0px;
 }
 
 .heroContents1 h3 {
   font-family: var(--general-font-family);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 17.07px;
   letter-spacing: 0.1em;
@@ -274,9 +287,9 @@ header nav ul li:hover {
 
 .heroContents1 p {
   font-family: var(--general-font-family);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 16.32px;
+  line-height: 20px;
   text-align: left;
   color: #ffffff;
 }
@@ -319,6 +332,8 @@ header nav ul li:hover {
 .about_us figure img {
   width: 50rem;
   height: 100%;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
 }
 
 .aboutContents article {
@@ -638,6 +653,59 @@ footer .footerCont1 div span {
   color: #fff;
   cursor: pointer;
   display: none;
+}
+
+/* Checkbox Styling */
+form div label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 16px;
+  color: #333;
+  font-family: var(--general-font-family);
+}
+
+form div label input[type="checkbox"] {
+  /* appearance: none; */
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--general-bg-color);
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  font-family: var(--general-font-family);
+}
+
+form div label input[type="checkbox"]:checked {
+  background-color: var(--general-bg-color);
+  border-color: var(--general-bg-color);
+}
+
+form div label input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: #fff;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+form div label input[type="checkbox"]:focus {
+  box-shadow: 0 0 3px var(--general-bg-color);
+}
+
+input {
+  color: var(--general-bg-color);
+  font-family: var(--general-font-family);
+  font-size: 14px;
+  font-weight: 600;
 }
 
 @media (max-width: 1023px) {
