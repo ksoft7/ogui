@@ -735,10 +735,10 @@ footer .footerCont1 div span {
 
 @media (max-width: 525px) {
   header {
-    padding: 0.7rem 0;
+    padding: 0.8rem 0;
   }
   .header_logo {
-    width: 12rem;
+    width: 13rem;
   }
   .bar1,
   .bar2,
