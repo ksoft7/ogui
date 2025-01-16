@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,6 +65,7 @@
     </header>
     <div class="overlay"></div>
 
+    
     <!----------------- hero_section --------------->
 
     <section class="hero_section">
@@ -76,10 +81,10 @@
             in Making a Difference Today
           </p>
           <span>
-            <button class="generalBtn">
+            <a href="registration.php" class="generalBtn" style="width: 40%;">
               Get Involved
               <img src="./imgs/Arrow_Sub_Right_Down.svg" alt="Arrow_Sub_Right_Down icon" />
-            </button>
+            </a>
           </span>
         </article>
 
@@ -88,7 +93,7 @@
           <img class="hero-img2" src="./imgs/heroTwo.jpg" alt="hero-img2" />
         </figure>
       </article>
-
+     
       <article class="heroContents1">
         <div>
           <img src="./imgs/heroIcon1.svg" alt="heroIcon1" />
@@ -299,88 +304,7 @@
     </footer>
   </main>
 
-  <main class="content2">
-    <section class="posLines">
-      <article class="titlehol">
-        <img class="tripLine1" src="./imgs/linesTri.svg" alt="triple lines" />
-        <img class="tripLine2" src="./imgs/linesTri.svg" alt="triple lines" />
-      </article>
-    </section>
-
-    <div class="coverReg">
-      <section class="registerForm">
-        <h1>
-          OGERI <span style="color: #ff6e3b">HEALTH</span> <br />
-          FOUNDATION
-        </h1>
-        <p class="closeoo">&times;</p>
-        <article>
-          <img class="logo1" src="./imgs/logo2.svg" alt="logo img" />
-          <span>
-            <div>
-              <img src="./imgs/straigthLine.svg" alt="straigthLine img" />
-            </div>
-            <div class="signup">
-              <h2>Sign Up</h2>
-              <p>Register now for newsletters and updates.</p>
-            </div>
-          </span>
-        </article>
-
-        <form action="#" id="registrationForm">
-          <div>
-            <h3><img src="./imgs/nameIcon.svg" alt="name icon" /> Name</h3>
-            <span>
-              <input type="text" placeholder="First Name" required />
-              <input type="text" placeholder="Last Name" required />
-            </span>
-          </div>
-          <span>
-            <h3>
-              <img src="./imgs/envelop.svg" alt="envelop icon" /> E-mail
-            </h3>
-            <input type="email" placeholder="Enter Your E-mail" required />
-          </span>
-          <span>
-            <h3>
-              <img src="./imgs/nameIcon.svg" alt="user type icon" />
-              Select User Type/Role
-            </h3>
-            <div>
-              <label>
-                <input type="checkbox" name="userType" value="Donor" /> Donor
-              </label>
-              <label>
-                <input type="checkbox" name="userType" value="Volunteer" id="volunteerOption" /> Volunteer
-              </label>
-              <label>
-                <input type="checkbox" name="userType" value="CommunityMember" /> Community Member
-              </label>
-              <label>
-                <input type="checkbox" name="userType" value="Partner" /> Partner
-              </label>
-            </div>
-          </span>
-          <span id="cvUploadContainer" style="display: none;">
-            <h3>
-              <i class="fa fa-upload"></i>
-              Upload Your CV
-            </h3>
-            <input type="file" id="cvUpload" />
-          </span>
-          <span class="or">
-            <div></div>
-            <p>Or</p>
-            <div></div>
-          </span>
-          <button class="google">
-            <img src="./imgs/google.svg" alt="Google icon" /> Sign in with Google
-          </button>
-          <button type="submit" class="register">Register Now</button>
-        </form>
-      </section>
-    </div>
-  </main>
+ 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const menuDropdown = document.querySelector(".menuDropdown li");
