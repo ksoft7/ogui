@@ -71,9 +71,11 @@ session_start();
             in Making a Difference Today
           </p>
           <span>
-            <a href="registration.php" class="generalBtn" style="width: 40%;">
-              Get Involved
-              <img src="./imgs/Arrow_Sub_Right_Down.svg" alt="Arrow_Sub_Right_Down icon" />
+            <a href="registration.php" style="width: 40%;">
+              <button class="generalBtn">
+                Get Involved
+                <img src="./imgs/Arrow_Sub_Right_Down.svg" alt="Arrow_Sub_Right_Down icon" />
+              </button>
             </a>
           </span>
         </article>
