@@ -6,7 +6,10 @@ session_start();
 
 
 <html lang="en">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +18,10 @@ session_start();
   <link rel="stylesheet" href="./signup.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
 <body>
   <main class="content2">
     <section class="posLines">
@@ -24,16 +30,24 @@ session_start();
         <img class="tripLine2" src="./imgs/linesTri.svg" alt="triple lines" />
       </article>
     </section>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
     <div class="coverReg">
       <section class="registerForm">
         <h1>
           OGERI <span style="color: #ff6e3b">HEALTH</span> <br />
           FOUNDATION
         </h1>
+<<<<<<< HEAD
         <a href="./index.php">
           <p class="closeoo">&times;</p>
         </a>
+=======
+        <p class="closeoo">&times;</p>
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
         <article>
           <img class="logo1" src="./imgs/logo2.svg" alt="logo img" />
           <span>
@@ -47,6 +61,7 @@ session_start();
           </span>
 
           <!-- Display error messages -->
+<<<<<<< HEAD
 
 
         </article>
@@ -61,19 +76,43 @@ session_start();
           }
           echo '</ul>';
           echo '</div>';
+=======
+         
+
+        </article>
+        <?php
+// Display error messages if any
+        if (isset($_SESSION['errors']) && !empty($_SESSION['errors'])) {
+            echo '<div class="alert error">';
+            echo '<span class="close-btn" onclick="closeMessage(\'error\')">&times;</span>';  // Close button
+            echo '<ul>';
+            foreach ($_SESSION['errors'] as $error) {
+                echo '<li>' . htmlspecialchars($error) . '</li>';
+            }
+            echo '</ul>';
+            echo '</div>';
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
         }
 
         // Display success message if any
         if (isset($_SESSION['success_message']) && !empty($_SESSION['success_message'])) {
+<<<<<<< HEAD
           echo '<div class="alert success">';
           echo '<span class="close-btn" onclick="closeMessage(\'success\')">&times;</span>';  // Close button
           echo htmlspecialchars($_SESSION['success_message']);
           echo '</div>';
+=======
+            echo '<div class="alert success">';
+            echo '<span class="close-btn" onclick="closeMessage(\'success\')">&times;</span>';  // Close button
+            echo htmlspecialchars($_SESSION['success_message']);
+            echo '</div>';
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
         }
         ?>
 
         <form action="user-handler.php" method="POST" id="registrationForm" enctype="multipart/form-data">
           <div>
+<<<<<<< HEAD
             <h3><img src="./imgs/nameIcon.svg" alt="name icon" /> Name</h3>
             <span>
               <input type="text" name="first_name" placeholder="First Name" required />
@@ -123,6 +162,57 @@ session_start();
           </button>
           <button type="submit" class="register" name="submit">Register Now</button>
         </form>
+=======
+              <h3><img src="./imgs/nameIcon.svg" alt="name icon" /> Name</h3>
+              <span>
+                  <input type="text" name="first_name" placeholder="First Name" required />
+                  <input type="text" name="last_name" placeholder="Last Name" required />
+              </span>
+          </div>
+          <span>
+              <h3>
+                  <img src="./imgs/envelop.svg" alt="envelop icon" /> E-mail
+              </h3>
+              <input type="email" name="email" placeholder="Enter Your E-mail" required />
+          </span>
+          <span>
+              <h3>
+                  <img src="./imgs/nameIcon.svg" alt="user type icon" />
+                  Select User Type/Role
+              </h3>
+              <div>
+                  <label>
+                      <input type="checkbox" name="user_type[]" value="Donor" /> Donor
+                  </label>
+                  <label>
+                      <input type="checkbox" name="user_type[]" value="Volunteer" id="volunteerOption" /> Volunteer
+                  </label>
+                  <label>
+                      <input type="checkbox" name="user_type[]" value="Community Member" /> Community Member
+                  </label>
+                  <label>
+                      <input type="checkbox" name="user_type[]" value="Partner" /> Partner
+                  </label>
+              </div>
+          </span>
+          <span id="cvUploadContainer" style="display: none;">
+              <h3>
+                  <i class="fa fa-upload"></i>
+                  Upload Your CV
+              </h3>
+              <input type="file" name="cv_upload" id="cvUpload" />
+          </span>
+          <span class="or">
+              <div></div>
+              <p>Or</p>
+              <div></div>
+          </span>
+          <button class="google">
+              <img src="./imgs/google.svg" alt="Google icon" /> Sign in with Google
+          </button>
+          <button type="submit" class="register" name="submit">Register Now</button>
+      </form>
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
       </section>
     </div>
   </main>
@@ -140,6 +230,7 @@ session_start();
 
     const closeBtns = document.querySelectorAll('.close-btn');
 
+<<<<<<< HEAD
     // Add event listener to each close button
     closeBtns.forEach(function (button) {
       button.addEventListener('click', function () {
@@ -165,3 +256,29 @@ session_start();
 </body>
 
 </html>
+=======
+// Add event listener to each close button
+closeBtns.forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Find the parent alert container and hide it
+        this.parentElement.style.display = 'none';
+    });
+});
+
+function closeMessage(type) {
+    // Remove the message element
+    const alertElement = document.querySelector(`.alert.${type}`);
+    if (alertElement) {
+        alertElement.style.display = 'none';  // Hide the alert box
+    }
+
+    // Send an AJAX request to unset the session variable
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'unset-session.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send('type=' + type);
+}
+  </script>
+</body>
+</html>
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6

@@ -14,6 +14,7 @@ session_start();
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<<<<<<< HEAD
 <body>
   <main class="content1">
     <!-------------- header ------------>
@@ -24,15 +25,46 @@ session_start();
           <li>Home</li>
           <li>About Us</li>
           <div class="menuDropdown">
+=======
+  <body>
+    <main class="content1">
+      <!-------------- header ------------>
+      <header>
+        <nav>
+          <img class="header_logo" src="./imgs/logo.svg" alt="logo" />
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <div class="menuDropdown">
+              <li>
+                Get involved
+                <img src="./imgs/Chevron_Down.svg" alt="dowm arrow" />
+              </li>
+              <span class="dropdown hideContents">
+                <p>Donor</p>
+                <p>Community member</p>
+                <p>Partner</p>
+                <p>Volunteer</p>
+              </span>
+            </div>
+
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
             <li>
               Get involved
               <img src="./imgs/Chevron_Down.svg" alt="dowm arrow" />
             </li>
             <span class="dropdown hideContents">
+<<<<<<< HEAD
               <p>Donor</p>
               <p>Community member</p>
               <p>Partner</p>
               <p>Volunteer</p>
+=======
+              <p class="generalBtn">Donor</p>
+              <p class="generalBtn">Community member</p>
+              <p class="generalBtn">Partner</p>
+              <p class="generalBtn">Volunteer</p>
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
             </span>
           </div>
           <li>
@@ -40,7 +72,10 @@ session_start();
           </li>
           <li>Blog</li>
           <li>Contact Us</li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
           <button class="removeHam">
             <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/menu--v3.png" alt="menu--v3" />
           </button>
@@ -54,7 +89,11 @@ session_start();
     </header>
     <div class="overlay"></div>
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
     <!----------------- hero_section --------------->
 
     <section class="hero_section">
@@ -70,11 +109,17 @@ session_start();
             in Making a Difference Today
           </p>
           <span>
+<<<<<<< HEAD
             <a href="registration.php" style="width: 40%;">
               <button class="generalBtn">
                 Get Involved
                 <img src="./imgs/Arrow_Sub_Right_Down.svg" alt="Arrow_Sub_Right_Down icon" />
               </button>
+=======
+            <a href="registration.php" class="generalBtn" style="width: 40%;">
+              Get Involved
+              <img src="./imgs/Arrow_Sub_Right_Down.svg" alt="Arrow_Sub_Right_Down icon" />
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
             </a>
           </span>
         </article>
@@ -84,7 +129,11 @@ session_start();
           <img class="hero-img2" src="./imgs/heroTwo.jpg" alt="hero-img2" />
         </figure>
       </article>
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
       <article class="heroContents1">
         <div>
           <img src="./imgs/heroIcon1.svg" alt="heroIcon1" />
@@ -295,7 +344,11 @@ session_start();
     </footer>
   </main>
 
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const menuDropdown = document.querySelector(".menuDropdown li");
@@ -311,11 +364,28 @@ session_start();
       const navContent = document.querySelector("header nav ul");
       const removeHam = document.querySelector(".removeHam");
       const overlay = document.querySelector(".overlay");
+<<<<<<< HEAD
 
       const generalBtn = document.querySelectorAll(".generalBtn");
       const closeooBtn = document.querySelector(".closeoo");
 
 
+=======
+      const content1 = document.querySelector(".content1");
+      const content2 = document.querySelector(".content2");
+      const generalBtn = document.querySelectorAll(".generalBtn");
+      const closeooBtn = document.querySelector(".closeoo");
+
+      for (let i = 0; i < generalBtn.length; i++)
+        generalBtn[i].addEventListener("click", () => {
+          content2.style.display = "block";
+          content1.style.display = "none";
+        });
+      closeooBtn.addEventListener("click", () => {
+        content1.style.display = "block";
+        content2.style.display = "none";
+      });
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
 
       hamburger.addEventListener("click", () => {
         navContent.style.display = "block";

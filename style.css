@@ -252,6 +252,12 @@ header nav ul li:hover {
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 10rem;
+<<<<<<< HEAD
+=======
+  overflow: hidden;
+  overflow-x: scroll;
+  z-index: 9999;
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
 }
 
 .heroContents1 div {
@@ -702,10 +708,16 @@ input {
   font-weight: 600;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1266px) {
   .aboutContents {
     flex-wrap: wrap;
     justify-content: center;
+=======
+@media (max-width: 1023px) {
+  .hero_section {
+    padding-top: 18rem;
+>>>>>>> 64230c0066713c3794485a59c4ac1b9b1787c3b6
   }
   .hero_section .heroContents {
     flex-wrap: wrap;
