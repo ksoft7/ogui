@@ -35,8 +35,6 @@ session_start();
               <p>Volunteer</p>
             </span>
           </div>
-
-
           <li>
             What We Do <img src="./imgs/Chevron_Down.svg" alt="dowm arrow" />
           </li>
@@ -312,20 +310,8 @@ session_start();
       const navContent = document.querySelector("header nav ul");
       const removeHam = document.querySelector(".removeHam");
       const overlay = document.querySelector(".overlay");
-      const content1 = document.querySelector(".content1");
-      const content2 = document.querySelector(".content2");
-      const generalBtn = document.querySelectorAll(".generalBtn");
-      const closeooBtn = document.querySelector(".closeoo");
 
-      for (let i = 0; i < generalBtn.length; i++)
-        generalBtn[i].addEventListener("click", () => {
-          content2.style.display = "block";
-          content1.style.display = "none";
-        });
-      closeooBtn.addEventListener("click", () => {
-        content1.style.display = "block";
-        content2.style.display = "none";
-      });
+
 
       hamburger.addEventListener("click", () => {
         navContent.style.display = "block";
