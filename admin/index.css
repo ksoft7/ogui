@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Raleway;
+  position: relative;
+}
+#topbar{
+    background: linear-gradient(180deg, #2d3f53 0%, #648cb9 100%);
+    padding: 0px 40px;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+}
+.hamburger{
+    width: 5%;
+   
+    display: none;
+}
+.nav-div {
+    display: none;
+    position: absolute;
+    top: 50px; /* Adjust according to your layout */
+    right: 0;
+    width: 200px; /* Adjust width as needed */
+    background-color: #333; /* Background color */
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Hamburger menu styles (optional, customize as needed) */
+.hamburger {
+    cursor: pointer;
+    font-size: 30px;
+    color: #333;
+    display: none;
+   
+}
+
+.div2{
+    margin-top: 50px;
+}
+
+/* Show hamburger menu on small screens */
+@media (max-width: 800px) {
+    .hamburger {
+        display: block;
+        width: 20%;
+    }
+#topbar{
+    padding: 10px;
+}
+    .nav-div.active {
+        display: block; /* Show the nav-div when active */
+    }
+    .logout-main{
+        display: none;
+    }
+}
+
+/* Navigation links styles */
+.nav-div-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-div-item li {
+    margin: 10px 0;
+}
+
+.nav-div-link {
+    color: white;
+    text-decoration: none;
+}
+.main-header{
+    width: 95%;
+}
+
+.sidebar{
+    background: linear-gradient(180deg, #2d3f53 0%, #648cb9 100%);
+    height: 100vh;
+}
+
+.user-info{
+    color: white;
+    
+    font-size: 1.5rem;
+}
+
+
+.main-flex{
+    display: flex;
+    
+}
+.main-content{
+
+    width: 83%;
+    /* border: 2px red solid; */
+
+}
+
+.sec-div{
+    width: 70%;
+    border: 2px solid grey;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 10px 0px;
+}
+
+.sec-div2 div{
+    width: 30%;
+    background-color: orangered;
+    margin: 0 auto;
+    padding: 10px 0px;
+    font-size: 2rem;
+   
+}
+.flex{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    
+}
+.Flex2{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 800px) {
+   .main-flex{
+    display: flex;
+    flex-direction: column;
+   } 
+   .main-header{
+    width: 50%;
+}
+   .sidebar{
+    display: none;
+    width: 0%;
+   }
+   .main-content{
+    width: 100%;
+   }
+}
+
+.flex-div3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+   }
+   .flex-div3 p{
+    font-size: larger;
+   }
+   .flex-div3 + hr {
+    margin: 20px auto;
+   }
+
+   .table-responsive {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+}
+
+.table-responsive table {
+    width: 100%; /* Ensures the table takes full width in its container */
+    border-collapse: collapse;
+}
+
+.table-responsive th, .table-responsive td {
+    white-space: nowrap; /* Prevents table data from wrapping onto multiple lines */
+}
+
+@media (max-width: 768px) {
+    .table-responsive table {
+        font-size: 14px; /* Optional: Adjust table font size for smaller screens */
+    }
+}
+
+.logout-main a{
+    text-decoration: none;
+   
+}

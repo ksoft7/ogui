@@ -23,6 +23,7 @@ html {
 
 body {
   position: relative;
+   background: linear-gradient(180deg, #2d3f53 0%, #648cb9 100%);
 }
 
 .posLines {
@@ -244,8 +245,37 @@ body {
   margin-top: 1rem;
 }
 
-.content2 {
+/* .content2 {
   display: none;
+} */
+
+.close-btn {
+  font-size: 20px;
+  color: #999;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.alert {
+  position: relative;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.alert.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.alert.success {
+  background-color: #d4edda;
+  color: #155724;
 }
 
 @media (max-width: 1025px) {
